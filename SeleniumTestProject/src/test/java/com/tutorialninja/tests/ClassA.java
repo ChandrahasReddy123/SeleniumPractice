@@ -11,6 +11,7 @@ public class ClassA {
 		@Test(priority = 1)
 		public void methodATwo() {
 			   System.out.println("methodATwo test method");
+			   System.out.println("chinna");
 		   }
 		@Test(priority = 2)
 		public void methodAThree() {
