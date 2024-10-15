@@ -32,6 +32,7 @@ public class Login {
         driver.findElement(By.xpath("//input[@id='password']")).sendKeys("secret_sauce");
         driver.findElement(By.xpath("//input[@id='login-button']")).click();
         Assert.assertTrue(driver.findElement(By.xpath("//div[text()='Products']")).getText().contains("Products"));
+        System.out.println("Hi Hello World");
     }
 
     @Test(priority = 1)
