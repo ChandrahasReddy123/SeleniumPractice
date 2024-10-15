@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="RegisterTest">
+		<classes>
+			<class name="Sample.Register">
+				<methods>
+					<include name="verifyRegisterWithAllFields" />
+					<include name="VerifyRegisterWithMandatoryFields" />
+				</methods>
+			</class>
+
+		</classes>
+	</test> <!--
+	Test -->
+	<test thread-count="5" name="LoginTest">
+		<classes>
+			<class name="Sample.Login">
+				<methods>
+					<include name="VerifyLoginWithValidCrendentials" />
+					<include name="verifyLoginWithInvalidCrendentials" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+	<test thread-count="5" name="SearchTest">
+		<classes>
+			<class name="Sample.Search">
+				<methods>
+					<include name="verifySearchWithExistingProduct" />
+					<include name="verifySearchWithNonExistingProduct" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
