@@ -11,5 +11,12 @@ public class ListDemo {
 	     a.add(20);
 	     Object[] b=a.toArray();
 	     System.out.println(b[0]);
+	  ListDemo d=new ListDemo();
+	  d.m1();
+
+	  
+}
+	public void m1(){
+		System.out.println("Hello world");
 }
 }
