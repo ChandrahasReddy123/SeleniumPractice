@@ -59,6 +59,10 @@ public class Login {
         Assert.assertTrue(driver.findElement(By.xpath("//h3[text()='Username and password do not match any user in this service']")).getText().contains("service"));
     }
 
+    @Test
+    public void m1(){
+        System.out.println("Hello world");
+
     @Test(priority = 4)
     public void verifyLoginWithoutEmail() {
         driver.findElement(By.xpath("//input[@id='password']")).sendKeys("secret_sauce");
