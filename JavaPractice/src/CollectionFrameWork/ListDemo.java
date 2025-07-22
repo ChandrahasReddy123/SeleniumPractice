@@ -17,6 +17,8 @@ public class ListDemo {
 	  
 }
 	public void m1(){
+		LinkedHashSet lhs=new LinkedHashSet();
+		System.out.println(lhs.size());
 		System.out.println("Hello world");
 }
 }
